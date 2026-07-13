@@ -1,0 +1,1 @@
+You may add .SLDPRT, .SLDASM, .SLDDRW, STEP, STL, or ZIP files here. Only share files you own and that contain no confidential employer or team information.
