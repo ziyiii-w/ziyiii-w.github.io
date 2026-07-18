@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SolidWorks 5-jaw chuck assembly and motion design by Ziyi Wang." />
+  <title>5-Jaw Chuck Assembly | Ziyi Wang</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .project-page { padding: 58px 0 84px; }
+    .project-page .back { display:inline-flex; margin-bottom:24px; text-decoration:none; color:var(--accent); font-weight:650; }
+    .project-hero { padding: clamp(24px, 4vw, 42px); border-radius: 28px; }
+    .project-hero h1 { margin-bottom: 12px; font-size: clamp(2.6rem, 6vw, 5rem); }
+    .project-lead { max-width: 900px; margin: 0; color: var(--muted); font-size: 1.08rem; line-height: 1.75; }
+    .tag-row { display:flex; flex-wrap:wrap; gap:8px; margin-top:22px; }
+    .tag-row span { padding:8px 11px; border-radius:999px; color:var(--accent-strong); background:rgba(255,255,255,.34); border:1px solid var(--line); font-size:.78rem; font-weight:700; }
+    .demo-block { margin-top:24px; scroll-margin-top:30px; }
+    .demo-frame { overflow:hidden; border-radius:24px; border:1px solid var(--line); box-shadow:var(--shadow); background:rgba(16,25,29,.92); }
+    .demo-frame video { display:block; width:100%; max-height:690px; background:#10191d; }
+    .download-row { display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin-top:16px; }
+    .file-note { margin:0; color:var(--muted); font-size:.88rem; }
+    .project-sections { display:grid; gap:16px; margin-top:24px; }
+    .content-card { padding: clamp(22px, 3vw, 32px); border-radius:24px; }
+    .content-card h2 { margin-bottom:12px; font-size:clamp(1.55rem,3vw,2.25rem); }
+    .content-card p, .content-card li { color:var(--muted); line-height:1.7; }
+    .material-table { width:100%; border-collapse:collapse; margin-top:10px; }
+    .material-table th, .material-table td { padding:13px 12px; text-align:left; vertical-align:top; border-bottom:1px solid rgba(255,255,255,.42); }
+    .material-table th { color:var(--accent-strong); font-size:.8rem; letter-spacing:.06em; text-transform:uppercase; }
+    .material-table td { color:var(--muted); }
+    .material-table td:first-child { color:var(--text); font-weight:700; }
+    .project-disclaimer { margin:12px 0 0; font-size:.84rem; color:var(--subtle); }
+    @media (max-width:760px) { .material-table { display:block; overflow-x:auto; } }
+  </style>
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <main class="project-page">
+    <div class="container">
+      <a class="back" href="../index.html#mechanical-design">← Back to Mechanical Design</a>
+
+      <section class="project-hero glass-card">
+        <p class="section-label">SolidWorks · Assembly & Motion Design</p>
+        <h1>5-Jaw Chuck Assembly</h1>
+        <p class="project-lead">
+          A compact five-jaw gripping mechanism modeled as a multi-component SolidWorks assembly. This project focuses on coordinated jaw motion, assembly relationships, and a concept for more evenly distributed gripping around a central workpiece.
+        </p>
+        <div class="tag-row">
+          <span>3D CAD</span><span>Assembly Design</span><span>Motion Demo</span><span>SolidWorks</span>
+        </div>
+      </section>
+
+      <section id="demo" class="demo-block">
+        <div class="demo-frame">
+          <video controls autoplay muted loop playsinline preload="metadata" poster="../assets/images/5-jaw-chuck-poster.jpg">
+            <source src="../assets/videos/5-jaw-chuck-demo.mp4" type="video/mp4" />
+            Your browser does not support embedded MP4 video.
+          </video>
+        </div>
+        <div class="download-row">
+          <a class="button primary" href="../assets/files/5-Jaw-Chuck-SolidWorks-Files.zip" download>Download SolidWorks Assembly</a>
+          <p class="file-note">ZIP package with assembly and part files</p>
+        </div>
+        <p class="project-disclaimer">For best results, extract all files into the same folder before opening the assembly in SolidWorks.</p>
+      </section>
+
+      <div class="project-sections">
+        <section class="content-card glass-card">
+          <p class="section-label">Component Material Recommendations</p>
+          <h2>Suggested engineering materials</h2>
+          <table class="material-table">
+            <thead><tr><th>Component</th><th>Suggested material</th></tr></thead>
+            <tbody>
+              <tr><td>Chuck body / base</td><td>AISI 4140 steel</td></tr>
+              <tr><td>Jaw carriers / links</td><td>AISI 4140 or 4340 steel</td></tr>
+              <tr><td>Jaw tips</td><td>A2 tool steel</td></tr>
+              <tr><td>Pins / pivots</td><td>AISI 52100 or hardened 4140</td></tr>
+              <tr><td>Bushings</td><td>SAE 660 bronze</td></tr>
+              <tr><td>Fasteners</td><td>Class 12.9 alloy-steel screws</td></tr>
+              <tr><td>Covers / spacers</td><td>6061-T6 aluminum</td></tr>
+            </tbody>
+          </table>
+          <p class="project-disclaimer">These are concise concept-stage recommendations and can be refined later based on load, wear, and manufacturability requirements.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

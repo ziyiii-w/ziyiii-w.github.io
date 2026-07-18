@@ -1,16 +1,7 @@
-# Ziyi Wang Engineering Portfolio — Version 14
+# Ziyi Wang Engineering Portfolio — Version 17
 
-Version 14 updates:
-- Removed the “1.5 years” wording from the About section.
-- Both CV buttons now open `assets/files/Ziyi-CV.pdf`.
-- Refined all three Engineering Experience summaries and achievement statements.
-- Added justified alignment to the experience descriptions and achievement text.
-
-Use VS Code + Live Server to preview locally before pushing to GitHub Pages.
-
-
-Version 15 updates:
-- Replaced the portfolio CV with the latest Ziyi-CV PDF.
-- Widened the Achievement column and reduced unnecessary spacing.
-- Removed automatic hyphenation and awkward justified spacing in experience text.
-- Improved line wrapping across all three experience cards.
+Version 17 updates:
+- Simplified the 5-Jaw Chuck project page by removing the Design Purpose, Potential Applications, Design Features, and validation roadmap sections.
+- Shortened the material recommendations into a concise two-column table.
+- Replaced the single assembly download with a ZIP package containing the assembly and uploaded SolidWorks part files.
+- Added a note reminding users to extract all files into the same folder before opening the assembly.

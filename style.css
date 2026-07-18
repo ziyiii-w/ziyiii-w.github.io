@@ -933,3 +933,68 @@ footer {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+
+/* Version 16: video-based 5-jaw chuck project card */
+.project-video-preview {
+  position: relative;
+  display: block;
+  min-height: 273px;
+  padding: 0;
+  overflow: hidden;
+  background: #7f929a;
+}
+
+.project-video-preview video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.project-video-preview::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(19, 35, 42, 0.76), rgba(19, 35, 42, 0.04) 58%);
+  pointer-events: none;
+}
+
+.project-video-preview:hover video {
+  transform: scale(1.025);
+  filter: brightness(0.92);
+}
+
+.video-overlay-label,
+.video-play-badge {
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+}
+
+.video-overlay-label {
+  left: 22px;
+  bottom: 22px;
+  font-size: 0.84rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+}
+
+.video-play-badge {
+  right: 18px;
+  top: 18px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  background: rgba(23, 35, 41, 0.56);
+  border: 1px solid rgba(255,255,255,0.58);
+  backdrop-filter: blur(10px);
+}
+
+@media (max-width: 760px) {
+  .project-video-preview { min-height: 230px; }
+  .video-play-badge { display: none; }
+}
