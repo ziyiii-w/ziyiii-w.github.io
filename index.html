@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +8,7 @@
   <title>Ziyi Wang | Engineering Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="ambient ambient-a"></div>
   <div class="ambient ambient-b"></div>
@@ -33,16 +35,26 @@
           <p class="eyebrow">MECHANICAL & MATERIALS ENGINEERING</p>
           <h1>Ziyi Wang</h1>
           <h2>Engineering Portfolio</h2>
+          <p class="hero-intro">
+            Hi, I'm Ziyi. Welcome to my engineering portfolio.
+          </p>
+
           <p class="hero-copy">
-            MEng Mechanical Engineering student at the University of Toronto and
-            BEng Materials Engineering graduate from McGill University, with
-            experience in CAD, simulation, advanced manufacturing, and engineering analysis.
+            I am an MEng Mechanical Engineering student at the University of Toronto
+            and a BEng Materials Engineering graduate from McGill University. I have
+            industrial experience across semiconductor metal refining, advanced composites,
+            and steelmaking. This portfolio features selected projects in mechanical design,
+            simulation, and process development.
           </p>
 
           <div class="button-row">
-            <a class="button primary" href="#cv">View CV</a>
+            <a class="button primary"
+              href="assets/files/Ziyi-CV.pdf"
+              target="_blank"
+              rel="noopener">View CV</a>
             <a class="button secondary" href="#projects">View Projects</a>
             <a class="button secondary" href="#mechanical-design">View Mechanical Design</a>
+            <a class="button secondary" href="#contact">Contact</a>
           </div>
         </div>
       </div>
@@ -59,17 +71,20 @@
           <article class="experience-row glass-card">
             <div class="experience-year">2025</div>
             <div class="experience-main">
-              <p class="experience-industry">SEMICONDUCTOR MATERIALS</p>
+              <p class="experience-industry">SEMICONDUCTOR PURIFICATION</p>
               <h3>Process Engineering Intern</h3>
               <h4>5N Plus · High-purity semiconductor refining</h4>
               <p>
-                Contamination control, impurity mapping, sampling strategy,
-                process documentation, and yield optimization for Cd, Te, Zn, Sb, and CdTe.
+                Led process simulation and optimization across high- and ultra-high-purity
+                Cd, Te, Zn, Sb, and CdTe refining, including contamination root-cause analysis,
+                impurity mapping, sampling strategy development, clean-room testing, and
+                PFD/P&amp;ID updates.
               </p>
             </div>
             <div class="experience-results">
-              <span><strong>40%</strong> Cd line yield increase</span>
-              <span><strong>45%+</strong> cost reduction identified</span>
+              <p class="experience-achievement-label">Achievement</p>
+              <span><strong>40%</strong> cadmium line yield increase</span>
+              <span><strong>Antimony purification project:</strong> yield increased from 26.5% to 42.4%, with estimated costs reduced by over 45%</span>
             </div>
           </article>
 
@@ -78,15 +93,18 @@
             <div class="experience-main">
               <p class="experience-industry">ADVANCED COMPOSITES</p>
               <h3>Composite Engineering Intern</h3>
-              <h4>Linamar · Type IV hydrogen pressure vessels</h4>
+              <h4>Linamar · Type IV carbon-fiber hydrogen storage tanks</h4>
               <p>
-                Resin development, composite testing, DOE optimization, and AutoCAD
-                documentation for carbon-fiber hydrogen storage tanks.
+                Developed and optimized P-SiO₂-enhanced resin systems for Type IV carbon-fiber
+                hydrogen storage tanks using specialized additives; validated performance through
+                material characterization and mechanical testing, and prepared AutoCAD production
+                drawings.
               </p>
             </div>
             <div class="experience-results">
-              <span><strong>2,000+ psi</strong> burst improvement</span>
-              <span><strong>DOE</strong> materials optimization</span>
+              <p class="experience-achievement-label">Achievement</p>
+              <span><strong>2,000+ psi</strong> burst improvement per tank chamber</span>
+              <span><strong>Carbon-fiber resin system</strong> optimization</span>
             </div>
           </article>
 
@@ -97,11 +115,14 @@
               <h3>R&amp;D Engineering Intern</h3>
               <h4>EVRAZ · Vacuum degassing process modeling</h4>
               <p>
-                3D SolidWorks geometry and ANSYS Fluent multiphase CFD for molten steel,
-                argon flow, turbulence, and mass-transfer analysis.
+                Developed an Effective Equilibrium Reaction Zone model for vacuum degassing,
+                programmed iterative FactSage calculations, created 3D SolidWorks process geometry,
+                and ran ANSYS Fluent multiphase CFD of steel–argon flow.
               </p>
             </div>
             <div class="experience-results">
+              <p class="experience-achievement-label">Achievement</p>
+              <span><strong>Published</strong> Effective Equilibrium Reaction Zone model</span>
               <span><strong>SolidWorks</strong> process geometry</span>
               <span><strong>ANSYS</strong> multiphase CFD</span>
             </div>
@@ -110,7 +131,7 @@
       </div>
     </section>
 
-    
+
     <section id="publications" class="section publication-section">
       <div class="container">
         <div class="section-heading publication-heading">
@@ -131,14 +152,10 @@
             </p>
           </div>
           <div class="publication-actions">
-            <a class="small-button"
-               href="assets/files/Vacuum-Degassing-EERZ-Paper.pdf"
-               target="_blank"
-               rel="noopener">View paper</a>
-            <a class="small-button secondary-small"
-               href="https://doi.org/10.33313/388/077"
-               target="_blank"
-               rel="noopener">DOI</a>
+            <a class="small-button" href="assets/files/Vacuum-Degassing-EERZ-Paper.pdf" target="_blank"
+              rel="noopener">View paper</a>
+            <a class="small-button secondary-small" href="https://doi.org/10.33313/388/077" target="_blank"
+              rel="noopener">DOI</a>
           </div>
         </div>
       </div>
@@ -254,7 +271,7 @@
           </div>
         </div>
 
-        
+
         <div id="manufacturing" class="project-group">
           <div class="project-group-heading">
             <p class="section-label">Manufacturing & Process</p>
@@ -283,7 +300,7 @@
     </section>
 
 
-    
+
     <section class="section end-section">
       <div class="container end-grid">
         <section id="cv" class="compact-info-card glass-card">
@@ -295,10 +312,8 @@
               experience across semiconductor materials, composites, and steelmaking.
             </p>
           </div>
-          <a class="small-button emphasized"
-             href="assets/files/Ziyi-Wang-CV.pdf"
-             target="_blank"
-             rel="noopener">Open CV</a>
+          <a class="small-button emphasized" href="assets/files/Ziyi-CV.pdf" target="_blank" rel="noopener">Open
+            CV</a>
         </section>
 
         <section id="contact" class="compact-info-card glass-card">
@@ -307,10 +322,20 @@
             <h2>Let’s connect</h2>
             <p>Open to engineering opportunities, collaboration, and project discussions.</p>
           </div>
-          <div class="contact-links compact-links">
-            <a href="mailto:your-email@example.com">Email</a>
-            <a href="#" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://github.com/ziyiii-w" target="_blank" rel="noopener">GitHub</a>
+          <div class="contact-links compact-links contact-details">
+            <a href="mailto:ziyiw426@gmail.com">
+              <strong>Email:</strong>&nbsp; ziyiw426@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/ziyi-wang426/"
+              target="_blank"
+              rel="noopener">
+              <strong>LinkedIn:</strong>&nbsp; linkedin.com/in/ziyi-wang426
+            </a>
+            <a href="https://github.com/ziyiii-w"
+              target="_blank"
+              rel="noopener">
+              <strong>GitHub:</strong>&nbsp; github.com/ziyiii-w
+            </a>
           </div>
         </section>
       </div>
@@ -326,4 +351,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
